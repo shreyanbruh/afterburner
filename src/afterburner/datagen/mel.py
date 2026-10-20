@@ -2,13 +2,15 @@ import numpy as np
 import librosa
 from afterburner.audio import Audio
 
-def mel(input_audio: Audio,
-                    n_fft: int = 2048,
-                    hop_length: int | None = None,
-                    fmin: float = 0,
-                    fmax: float | None = None,
-                    amin: float = 1e-10,
-                    top_db: float | None = 80.0):
+def mel(            
+        input_audio: Audio,
+        n_fft: int = 2048,
+        hop_length: int | None = None,
+        fmin: float = 0,
+        fmax: float | None = None,
+        amin: float = 1e-10,
+        top_db: float | None = 80.0):
+    
     """Compute a mel spectrogram of an ``Audio`` clip, in decibels.
 
     Args:
