@@ -1,0 +1,35 @@
+Screen {
+    background: #000000;
+}
+
+Static, RichLog, Horizontal, Vertical {
+    background: #000000;
+}
+
+Input {
+    background: #000000;
+    border: round #6b3410;
+}
+
+Input:focus {
+    background: #000000;
+    background-tint: transparent;
+    border: round #ff7a1a;
+}
+
+#main-container { padding: 0 2; }
+
+#header  { height: 22; }
+#logo    { width: 40; }
+#info    { padding: 4 0 0 3; }
+#title   { height: auto; }
+#details { margin-top: 1; height: auto; }
+
+#output { 
+    height: 1fr; 
+    max-height: 10;
+    margin-top:1; 
+    padding: 0 1; }
+
+#command { height: 3; dock: bottom; }
+
